@@ -1,4 +1,4 @@
-#  This is MewMarket.
+#  This is UAPBazar.
 ## A simple market system for both Customer and Admin.
 ### It was the final project of Object Oriented Programing using Java course.
 some previews of the application are given below:
