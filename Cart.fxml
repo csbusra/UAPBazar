@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" style="-fx-background-color: #00c6cc;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CartController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Logged in as Customer:" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></Label>
+      <Button layoutX="506.0" layoutY="410.0" mnemonicParsing="false" onAction="#customer" prefHeight="26.0" prefWidth="74.0" style="-fx-background-color: #54fffb;" text="BACK" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="15.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Label layoutX="16.0" layoutY="51.0" text="ITEMS ON CART:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="458.0" layoutY="340.0" mnemonicParsing="false" onAction="#clearCart" prefHeight="26.0" prefWidth="127.0" style="-fx-background-color: #54fffb;" text="CLEAR CART" AnchorPane.rightAnchor="15.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button layoutX="458.0" layoutY="124.0" mnemonicParsing="false" onAction="#payBill" prefHeight="26.0" prefWidth="127.0" style="-fx-background-color: #54fffb;" text="PAY BILL" AnchorPane.rightAnchor="15.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button layoutX="458.0" layoutY="182.0" mnemonicParsing="false" onAction="#removeItem" prefHeight="26.0" prefWidth="127.0" style="-fx-background-color: #54fffb;" text="REMOVE ITEM" AnchorPane.rightAnchor="15.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button layoutX="458.0" layoutY="262.0" mnemonicParsing="false" onAction="#updateCount" prefHeight="26.0" prefWidth="127.0" style="-fx-background-color: #54fffb;" text="UPDATE COUNT" AnchorPane.rightAnchor="15.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Spinner fx:id="cartQuantity" layoutX="436.0" layoutY="222.0" prefHeight="26.0" prefWidth="150.0" AnchorPane.rightAnchor="14.0" />
+      <TableView fx:id="cartView" layoutX="122.0" layoutY="155.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="190.0" AnchorPane.topAnchor="80.0" />
+      <Label fx:id="bill" layoutX="420.0" layoutY="80.0" prefHeight="21.0" textAlignment="RIGHT" AnchorPane.rightAnchor="15.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="order" layoutX="384.0" layoutY="30.0" textAlignment="RIGHT" AnchorPane.rightAnchor="15.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
